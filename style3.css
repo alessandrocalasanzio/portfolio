@@ -1,0 +1,538 @@
+#loading_screen
+{  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color:black;
+  z-index: 99;
+  text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  
+  
+  body{
+      background-color: black;
+  }
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  /*NAVBAR*/
+  #navbar {
+    background-color: black !important;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    z-index: 9999;
+  }
+  
+  .nav-link{
+      color:white !important;
+      /*font-family:'Bebas Neue', !important;  */
+      /*font-family: 'Staatliches', !important;*/
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      text-transform: uppercase; /*METTE IN MAIUSCOLO IL TESTO*/
+      text-decoration: none; /*ELIMINA LA SOTTOLINEATURA DAL TESTO */
+      letter-spacing: 0.5em;/*SPAZIO TRA LE LETTERE*/
+      display: inline-block; /*DOVREBBE METTERE IL TESTO IN LINEA E NON A CAPO*/
+      padding: 10px 50px; /*Primo elemento è la grandezza della banda nera, il secondo la distanza tra gli elementi*/
+      position: relative;
+  }
+  
+  .nav-link:hover{
+      color: white;
+  }/*PER NON FAR CAMBIARE IL COLORE DELLE SCRITTE QUANDO CI PASSO SOPRA IL MOUSE*/
+  
+  
+  .nav-link:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #00ffff; /*CAMBIA IL COLORE DELLA RIGA QUANDO SI PASSA SOPRA IL MOUSE*/
+      transition: width 0.6s ease 0s, left 0.6s ease 0s;/*LENTEZZA ANIMAZIONE*/
+      width: 0;
+    }
+  
+    .nav-link:hover:after { 
+      width: 100%; 
+      left: 0; 
+      right: 0;
+      
+    }
+  
+  /*MEDIA NAVBAR*/
+  
+  @media screen and (max-width: 993px) {
+        ul {
+            margin-top: 1vw;
+           
+            
+        }
+    }
+    @media screen and (max-width: 993px) {
+      .nav-link {
+        font-size: 4vw;
+  
+      }
+    }
+    @media screen and (max-width: 993px) {
+      .nav-item {
+        
+        text-align: center;
+        word-spacing: 1.5vw;
+        
+      }
+    }
+    .sm-icons{
+      flex-direction: row;
+    }
+  
+    @media screen and (max-width: 993px) {
+      .sm-icons {
+       
+        float: right;
+      }
+    }
+  
+  
+  /*FINE NAVBAR*/
+  
+  
+  
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  
+  
+  
+  
+  /*SCRITTA DEL CONTAINER*/
+  .titolo{
+   
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size:medium;
+    text-decoration: none;
+    padding-top: 50px;
+    margin: 0 0 0 0;
+    float:left;
+  }
+  .wrapper {
+    display: block;
+    position: relative;
+    top: 70%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+  }
+  
+  .btn6{
+    padding: 0px 0px; /*DISTANZIAMENTO CORNICE*/
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display:inline-block;
+    border-bottom:1px solid transparent; /*Bordo Iniziale*/ 
+    border-top: 1px solid transparent; 
+   
+  }
+  
+  .btn6:before, .btn6:after{
+    display: block;
+    content: '';
+    transform-origin: right;
+    -webkit-transform: scaleX(0.0001);
+    -ms-transform: scaleX(0.0001);
+    transform: scaleX(0.0001);  
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: all .9s ease-in-out;
+  }
+  .btn6:before{
+    border-top: solid 5px white;
+  }
+  .btn6:after{
+    border-bottom: solid 5px aqua;
+    transform-origin: left;
+  }
+  .btn6:hover:before, .btn6:hover:after{
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+    
+    @media screen and (max-width: 993px) {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+    @media screen and (max-width: 993px) {
+      html {
+        margin-top: 100px;
+      }
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+      html{
+        margin-top: 150px;
+      }
+    }
+  
+    
+    /*FINE SCRITTA DEL CONTAINER*/
+    
+  
+  
+  
+  
+  
+  
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  /*SEZIONE PORTFOLIO CON LE 3 SEZIONI CON LE IMMAGINI*/
+  
+  div.gallery {
+      border: 1px solid #282828;
+      background-color: #282828;
+      border-radius: 2%;
+      
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #282828;
+      
+    }
+    
+    div.gallery video {
+      width: 100%;
+      height: auto;
+      border-radius: 1%;
+      margin: 0 0 0 0 ;
+      padding: 0 0 ;
+    }
+    div.gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 1%;
+      margin: 0 0 0 0 ;
+      padding: 0 0 ;
+    }
+    
+    div.desc {
+      padding: auto;
+      height: auto;
+      margin:0 0 0 0 !important;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
+    h6{
+      font-family: 'Orbitron', sans-serif;
+      color: teal;
+    }
+    
+    * {
+      box-sizing: border-box;
+      
+    }
+    
+    .responsive {
+      
+      padding: 6px 6px;
+      float: left;
+      width: 32.999999%;
+      margin: 0 0 0 15px !important; 
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+      
+    }
+  
+    .responsive:hover {
+      transform: translateY(-10px) scale(1.02);
+  }
+  
+  .baguetteBox-button {
+      background-color: transparent !important;
+  }
+  
+
+  
+   
+    
+    @media only screen and (max-width: 900px) {
+      .responsive {
+        width: 99.999999%;
+        margin: 0 0 0 0 !important ;
+      }
+    }
+  
+   
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    .hrclass{
+      border-top-color: aqua;
+      opacity:0.5;
+    }
+    
+    
+    /* FINE SEZIONE PORTFOLIO CON LE 3 SEZIONI CON LE IMMAGINI*/
+  
+  
+  
+  
+  
+    
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  /*SITE FOOTER*/
+  .site-footer
+  {
+    background-color: #282828; /*COLORE BACKGROUND*/
+    padding:10px 0 10px;/*SPAZIO DA: SOPRA, SX E DX, SOTTO */
+    font-size:14px; /*DIMENSIONE TUTTO IL TESTO*/
+    line-height:20px;/*DISTANZA TRA UNA RIGA E L'ALTRA*/
+    color: gainsboro; /*COLORE DEL TESTO*/
+  
+      
+      bottom: 0;
+      left: 0;
+      width: 100%;
+  }
+  .site-footer hr
+  {
+    border-top-color: aqua;
+    opacity:0.5;
+  }
+  .site-footer hr.small
+  {
+    margin: 0 0 0 0;
+   
+  }
+  .site-footer h6
+  {
+    color:#84C3BE; /*COLORE*/
+    font-size:18px;/*DIMENZIONE*/
+    text-transform:uppercase;/*TESTO*/
+    margin-top:25px; 
+    letter-spacing:1px;
+    text-align: center;
+  }
+  
+  .site-footer p{
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+  
+  /*
+  .site-footer a
+  {
+    color: aqua;
+  }
+  
+  
+  .site-footer a:hover
+  {
+    color:aqua;
+    text-decoration:none;
+  }
+  */
+  
+  
+  .site-footer .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px; /*QUESTO MI SPOSTA L'ICONA SU O GIU..NON CHIEDERE PERCHE*/
+    margin-left:6px;
+    margin-right:10px;
+    border-radius:100%;
+    background-color: gainsboro; /*BACKGROUND COLOR DELLE ICONE*/
+  }
+  .site-footer .social-icons
+  {
+    text-align:center; /*ICONE CENTRATE*/
+  }
+  
+  .spazio{
+    height: 50vh;
+  }
+  
+  
+  
+  
+  
+  
+  /*QUESTI SONO I MEDIA DI TUTTO IL FOOTER!!!!*/
+  @media(max-width:1025px){
+  
+  @media (max-width:991px)
+  {
+   
+  @media (max-width:768px)
+  {
+    .site-footer
+    {
+      padding-bottom:0 !important;
+      position: relative;
+      bottom: 0 !important;
+      left: 0;
+      width: 100%;
+      
+    }
+    .spazio{
+      height: 30vh;
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+  }
+  }
+  }
+  
+  
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  
+  
+  @media only screen and (min-device-width: 1018px) and (min-device-height: 1364px) and (-webkit-min-device-pixel-ratio: 2) {
+    .site-footer{
+     
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    }
+    .marginB{
+      margin-bottom: 250px !important;
+    }
+    .spazio{
+      height: 30vh;
+    }
+  }
+  @media only screen and (min-device-height: 1023px) and (min-device-width: 1364px) and (-webkit-min-device-pixel-ratio: 2) {
+    .site-footer{
+   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    }
+    .marginB{
+      margin-bottom: 250px !important;
+    }
+    .spazio{
+      height: 30vh;
+    }
+  }
+  
+  
+  /*FINE SITE FOOTER*/
+  
+  
+  
+  
+  /*COPYRIGHT TEXT*/
+  .copyright-text
+  {
+    margin-bottom:3px;
+    text-align: center;
+  }
+  /*FINE COPYRIGHT TEXT*/
+  
+  
+  
+  
+  
+  
+  /*SOCIAL ICONS*/
+  .social-icons
+  {
+    padding-left:0;/*SPOSTA LE ICONE A SINISTRA*/
+    margin-bottom:0;
+    margin-right:15px; /*SPOSTA A DESTRA LE ICONE*/
+    list-style:none; /*COME CLASSIFICARE LA LISTA: TIPO CON I QUADRATINI ECC..*/
+    text-align: center justify;
+  }
+  .social-icons li
+  {
+    display:inline-block; /*l’elemento può assumere, come gli elementi blocco, dimensioni esplicite*/
+    margin-bottom:4px;
+    
+  }
+  
+  
+  .social-icons a{
+    background-color: black;
+    color:black;
+    font-size:17px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;
+    visibility: visible;
+  
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe;
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px;
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998;
+  }
+  
+  .social-icons a.linktree:hover
+  {
+    background-color: rgb(6, 73, 6);
+  }
+  
+  
+  
+  
+  /*FINE SOCIAL ICONS*/
+  
+  /*FINE FOOTER*/
+  
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  
