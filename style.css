@@ -16,7 +16,7 @@
   font-family:  'Orbitron' !important;
   color: white;
   font-size: 5vw;
-  z-index: 999;
+  z-index: 1999;
 }
 
 
@@ -873,7 +873,7 @@ a{
   }
 }
 
-@media (max-width:376px)
+@media (max-width:410px)
 {
   .copyright-text
 {

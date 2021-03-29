@@ -443,6 +443,20 @@ div.gallery {
   margin-bottom:3px;
   text-align: center;
 }
+
+
+
+@media (max-width:410px)
+{
+  .copyright-text
+{
+  margin-top: 1px !important;
+  margin-bottom:2px;
+  text-align: center;
+  font-size: 3vw !important;
+}
+
+}
 /*FINE COPYRIGHT TEXT*/
 
 
