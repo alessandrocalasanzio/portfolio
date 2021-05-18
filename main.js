@@ -1,7 +1,7 @@
-const W=500; // Variabile per la larghezza
-const H=500;// Variabile per la lunghezza
+const W=320; // Variabile per la larghezza
+const H=320;// Variabile per la lunghezza
 
-const grandezzaCelle=100;
+const grandezzaCelle=80;
 
 const canvas = document.getElementById("canvas") //Sto dicento con la variabile "canvas" di recuperarmi l'id "canvas"
 const ctx=canvas.getContext("2d") //Sto settando il contesto
@@ -13,7 +13,7 @@ canvas.height = H;//Sto dicendo che la lunghezza del "canvas" è uguale a H(ovve
 
 
 const drawCelles= (txt,x,y) => {
-    ctx.font = '55px serif';
+    ctx.font = '30px serif';
     ctx.border= '1px solid black';
     ctx.fillText(txt,x,y);
     ctx.fillStyle= 'blue';
