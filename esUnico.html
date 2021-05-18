@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style2.css">
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/esunico.js"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="esunico.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <!--TESTO ANIMATO-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--GRAFICI-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!--FLATICON-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--BAGUETTE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
+
+    <title>Mini-Progetti</title>
+</head>
+
+
+
+<body>
+    <!--NAVBAR-->
+    <div id="navbar">
+        <nav class=" navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+            <a class="navbar-brand" href="index.html"><img src="img/LOGO34.png" alt="Alex" title="Alex" width="90" height="45"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/home.png" alt="Home" title="Home" width="45" height="40"></a>
+            <a class="navbar-brand" href="miniProgetti.html"><img src="img/back.png" alt="GoBack" title="GoBack" width="45" height="40"></a>
+
+
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cv"><b>CV</b></a>
+                        <a class="nav-link" href="index.html#skill"><b>Skill</b></a>
+                        <a class="nav-link" href="index.html#portfolio"><b>Portfolio</b></a>
+                    </li>
+                    <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>Soft-Skill</b></a><b>|</b>  <a class="nav-link" href="#"><b>Portfolio</b></a>
+              </li>
+              -->
+
+                </ul>
+                <ul class="navbar-nav sm-icons mr-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linktr.ee/vlessvndro93"><img src="img/linktree.png" width="53px" height="50px"></a>&nbsp;&nbsp;</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/alessandro-calasanzio-3898a617b/"><img src="img/linkwhite.png" width="50px" height="50px"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <br><br><br><br><br>
+
+
+    <body background=" https://wallpaperplay.com/walls/full/9/8/e/96473.jpg " id="bg" alt="">
+        <center>
+            <h1>ESERCIZIO UNICO DI RIPASSO</h1>
+            <h2>SOMMA,SOTTRAZIONE, MOLTIPLICAZIONE, DIVISIONE</h2>
+            <h3><b>Calcola la somma</b></h3>
+            <b>1° valore: </b><input type="number" id="val1"><br>
+            <b>2° valore: </b><input type="number" id="val2"><br><br>
+            <button id="bottone" onclick="somma()">Somma</button>
+            <p id="risultato0"></p>
+
+            <h3><b>Calcola la sottrazione</b></h3>
+            <b>1° valore: </b><input type="number" id="val3"><br>
+            <b>2° valore: </b><input type="number" id="val4"><br><br>
+            <button id="bottone" onclick="sottrazione()">Sottrazione</button>
+            <p id="risultato1"></p>
+
+            <h3><b>Calcola la moltiplicazione</b></h3>
+            <b>1° valore: </b><input type="number" id="val5"><br>
+            <b>2° valore: </b><input type="number" id="val6"><br><br>
+            <button id="bottone" onclick="moltiplicazione()">Moltiplicazione</button>
+            <p id="risultato2"></p>
+
+            <h3><b>Calcola la divisione</b></h3>
+            <b>1° valore: </b><input type="number" id="val7"><br>
+            <b>2° valore: </b><input type="number" id="val8"><br><br>
+            <button id="bottone" onclick="divisione()">Divisione</button>
+            <p id="risultato3"></p>
+        </center>
+        <hr>
+
+        <center>
+            <h1>MINI QUIZ</h1>
+
+            <b>Qual è il mio colore preferito?</b>
+            <input id="parola" type="text">
+            <button type="button" onclick="myFunction()">Risposta</button>
+            <p id="demo"></p>
+            <br>
+            <b>Qual è il mio frutto preferito?</b>
+            <input id="parola1" type="text">
+            <button type="button" onclick="myFunction1()">Risposta</button>
+            <p id="demo1"></p>
+
+            <p id="risultato"></p>
+        </center>
+        <hr>
+        <center>
+            <h1>CAMBIO IMMAGINE</h1>
+            <img src="" id="caso"><br>
+            <button id="1" class="btn btn-warning" onclick="lancio()">Lancia</button>
+        </center>
+
+        <br><br>
+
+
+
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-150px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+
+
+
+        <!--LIBRERIA JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run('.responsive');
+        </script>
+    </body>
+
+</html>
